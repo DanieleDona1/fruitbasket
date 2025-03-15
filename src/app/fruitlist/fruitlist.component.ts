@@ -1,12 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-fruitlist',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './fruitlist.component.html',
   styleUrl: './fruitlist.component.scss',
 })
 export class FruitlistComponent {
+  howItWorks = 'fine';
+
   fruitlist = [
     {
       name: 'Apfel',
@@ -16,8 +19,8 @@ export class FruitlistComponent {
       genus: 'Kernobstgewächsen innerhalb der Familie der Rosengewächse',
       stars: 2.3,
       reviews: [
-        { name: 'Kevin W.', text: 'ist lecker' },
-        { name: 'Arne P.', text: 'nicht so meins' },
+        // { name: 'Kevin W.', text: 'ist lecker' },
+        // { name: 'Arne P.', text: 'nicht so meins' },
       ],
     },
     {
